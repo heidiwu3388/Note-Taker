@@ -16,6 +16,11 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
+// GET Route for everything else
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
+);
+
 // server start listening to the requests
 app.listen(PORT, () => 
     console.log(`Note Taking Server listening at ${PORT}`)
