@@ -1,12 +1,12 @@
 [
     {
-        "id": "fcdf608e-55aa-4767-8d1d-6647b2426ca2",
-        "title": "Fix a bug",
-        "text": "new node id name must be \"id\" to match with the coding in the client"
+        "id": "3fe4822a-3afe-4638-81d4-da2c215c7c58",
+        "title": "Note 1",
+        "text": "11111111111111"
     },
     {
-        "id": "53099459-8820-41ec-bfa6-580ec9f6a8b0",
-        "title": "Celebration",
-        "text": "so happy to fix a bug"
+        "id": "4d45717c-dec1-473f-8dd9-9819b5ac1d4e",
+        "title": "Note 2",
+        "text": "22222222222222"
     }
 ]
