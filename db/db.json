@@ -1,7 +1,12 @@
 [
     {
-        "note_id": "57cd5ea2-6998-41b3-9c03-756663de422e",
-        "title": "should have id",
-        "text": "Test text"
+        "id": "fcdf608e-55aa-4767-8d1d-6647b2426ca2",
+        "title": "Fix a bug",
+        "text": "new node id name must be \"id\" to match with the coding in the client"
+    },
+    {
+        "id": "53099459-8820-41ec-bfa6-580ec9f6a8b0",
+        "title": "Celebration",
+        "text": "so happy to fix a bug"
     }
 ]
