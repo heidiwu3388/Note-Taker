@@ -49,9 +49,10 @@ notes.delete("/:id", (req, res) => {
         // parse the JSON data from the file
         const notes = JSON.parse(data);
         // find the index of the note to be deleted
-        const index = notes.findIndex(note => note.id === parseInt(idToBeDeleted));
+        const index = notes.findIndex(note => note.id === idToBeDeleted);
+        console.log("index: ", index);
         // if index is found
-        if (index) {
+        if (index !== -1) {
           notes.splice(index, 1);
           writeToFile("./db/db.json", notes);
           console.log("note deleted sucessfully!");
