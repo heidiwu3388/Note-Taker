@@ -1,6 +1,7 @@
-// bring in required packages
+// bring in required packages/helpers/routers
 const express = require("express");
 const path = require("path");
+const notesRouter = require("./routes/notesRouter");
 
 // create a express server object
 const app = express();
@@ -8,6 +9,8 @@ const app = express();
 // read the PORT number from enviroment variable
 const PORT = process.env.PORT || 3001;
 
+// redirect all "/api/notes" routes to notesRouter
+app.use("/api/notes", notesRouter) ;
 
 // initiate middleware to serve the static pages
 app.use(express.static("public"));
