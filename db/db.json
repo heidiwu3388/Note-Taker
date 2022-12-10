@@ -1,14 +1,7 @@
 [
     {
-        "title": "Test Title",
+        "note_id": "57cd5ea2-6998-41b3-9c03-756663de422e",
+        "title": "should have id",
         "text": "Test text"
-    },
-    {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "Prepare Dinner",
-        "text": "Meatballs and vegetable soup"
     }
 ]

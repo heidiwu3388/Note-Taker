@@ -1,6 +1,7 @@
 // bring in required packages
 const express = require("express");
 const { readFromFile, readAndAppend } = require("../helpers/fsutils");
+const { v4: uuidv4 } = require('uuid');
 
 // initiate notes router
 const notes = express.Router();
@@ -19,11 +20,12 @@ notes.post("/", (req, res) => {
 
   if (req.body) {
     const newNote = {
+      note_id: uuidv4(),
       title,
       text,
     };
     readAndAppend(newNote, "./db/db.json");   
-    res.status(200).json(`Note added successfully`);
+    res.status(200).json(newNote);
   } else {
     res.error("Error in adding note");
   }
