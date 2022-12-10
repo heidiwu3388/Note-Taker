@@ -8,15 +8,16 @@ const app = express();
 // read the PORT number from enviroment variable
 const PORT = process.env.PORT || 3001;
 
-// serving the static pages
+
+// initiate middleware to serve the static pages
 app.use(express.static("public"));
 
-// GET Route for notes page
+// HTML route : "GET /notes" 
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
-
-// GET Route for everything else
+ 
+// HTML route: "GET *" for everything else
 app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
