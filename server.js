@@ -9,6 +9,9 @@ const app = express();
 // read the PORT number from enviroment variable
 const PORT = process.env.PORT || 3001;
 
+// Middleware for parsing JSON
+app.use(express.json());
+
 // redirect all "/api/notes" routes to notesRouter
 app.use("/api/notes", notesRouter) ;
 
