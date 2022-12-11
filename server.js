@@ -3,10 +3,10 @@ const express = require("express");
 const path = require("path");
 const notesRouter = require("./routes/notesRouter");
 
-// create a express server object
+// create an express server object
 const app = express();
 
-// read the PORT number from enviroment variable
+// read the PORT number from environment variable
 const PORT = process.env.PORT || 3001;
 
 // Middleware for parsing JSON
