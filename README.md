@@ -1,4 +1,5 @@
-# Note-Taker
+# Note-Taker 
+
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
@@ -17,7 +18,8 @@ This application allows users to write and save notes. It is implemented using E
 N/A
 
 ## Usage
- - Here is the [link](https://heidi-note-taker.herokuapp.com/notes) for the deployed application.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heidi-note-taker.herokuapp.com/)
+ - Here is the link [https://heidi-note-taker.herokuapp.com/notes](https://heidi-note-taker.herokuapp.com/notes) for the deployed application.
 - When the application is opened, a landing page will be presented with a link to a notes page.
 - When the link to the notes page is clicked, a page will be presented with existing notes listed in the left-hand column, and empty fields to enter a new note title and the note's text in the right-hand column.
 - When users enter a new note title and the note's text, a SAVE icon appears in the navigation at the top right of the page.
